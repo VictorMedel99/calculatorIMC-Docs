@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{book}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{setspace}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\date{\today}
+
+\begin{document}
+ 	\include{caratula}
+
+\tableofcontents
+\newpage
+
+\section{Introducción}
+\vspace{0.5 cm}
+En el presente documento se identifican los aspectos correspondientes a la visión y alcance de este proyecto.\\
+\\ El proyecto Calculadora-IMC es un proyecto donde se requiere poner a prueba conocimientos de administración de proyectos y pruebas de software con respecto al segundo parcial.
+		
+\section{Definiciones}
+\vspace{0.5 cm}
+\textbf {UML}: Unified Modeling Language, por sus siglas en inglés, la cual traduce
+Lenguaje Unificado de Modelado.\\
+
+\textbf {HTML}: HyperText Markup Language, por sus siglas en inglés, es un lenguaje
+basado en etiquetas usado en el desarrollo web el cual brinda un estándar para
+la definición de la estructura y para la definición de contenido de la página web
+como: texto, imágenes y videos.\\
+
+\textbf {Angular}: Framework para desarrollo de aplicaciones web desarrollado en TypeScript, de código abierto y mantenido por Google.\\
+
+\textbf {Firebase}: Firebase de Google es una plataforma en la nube para el desarrollo de aplicaciones web y móvil. Está disponible para distintas plataformas (iOS, Android y web).\\
+
+\textbf {TypeScript}: TypeScript es un lenguaje de programación libre y de código abierto desarrollado y mantenido por Microsoft. Es un superconjunto de JavaScript, que esencialmente añade tipos estáticos y objetos basados en clases.\\
+
+\section{Historial de revisiones}
+\vspace{0.5 cm}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|p{0.35\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|p{0.15\linewidth}|}
+\hline
+\textbf{Nombre}&\textbf{Fecha}&\textbf{Razón del cambio}&\textbf{Versión}
+\\\hline
+Víctor Iván Medel Ayohua&17/11/2020&Revisión inicial&v1.1\\\hline
+Víctor Iván Medel Ayohua&17/11/2020&Definición de la estructura inicial del documento&v1.2\\\hline
+Víctor Iván Medel Ayohua&18/11/2020&Redacción del capitulo 1&v1.3\\\hline
+Víctor Iván Medel Ayohua&18/11/2020&Redacción de los requerimientos de la calculadora IMC&v1.4\\\hline
+Víctor Iván Medel Ayohua&19/11/2020&Redacción del capitulo 2&v1.5\\\hline
+Víctor Iván Medel Ayohua&19/11/2020&Redacción del capitulo 3,4 &v2.1\\\hline
+\end{tabular}
+\end{table}
+
+\chapter{Requerimientos del negocio}
+Los requerimientos de este proyecto proporcionan la base de la funcionalidad con la que deberá contar esta aplicación.\\
+A partir de estos requerimientos nosotros identificamos los objetivos y tareas que los usuarios podrán realizar con esta herramienta.
+\section{Escenario}
+\vspace{0.5 cm}
+Calculadora IMC esta destinada a brindar información a los usuarios con respecto a su indice de masa corporal y su peso, información que puede ser de ayuda para el usuario y así conocer su situación actual y tomar acciones en base a ello.
+\section{Objetivos del negocio y criterios de éxito}
+\vspace{0.5 cm}
+Ayudar al usuario mejorando su experiencia con respecto a otras herramientas web que no desglosan la información del usuario y a su vez en muchos casos no puede ser comprendida correctamente.
+\newpage
+\vspace{0.5 cm}
+\section{Necesidades del cliente o del mercado}
+\vspace{0.5 cm}
+Calculadora IMC mostrará la información al usuario según su estado actual en alguna grafica o tabla visualmente atractiva y entendible para cualquier tipo de usuario.\\
+
+\textbf{Principalmente el sistema deberá cumplir los siguientes requisitos: }
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{Se podrá acceder a la aplicación desde cualquier navegador.}
+\item \textit{El usuario podrá consultar información y calcular su IMC.}
+\item \textit{El usuario podrá ver reflejada su información en alguna tabla o grafica.}
+\item \textit{Deberá incorporar caracteres que sean visibles en la mayoría de los navegadores.}
+\item \textit{Deberá Incorporar una interfaz de usuario sencilla estéticamente y completa según los datos requeridos para el calculo del IMC.}
+\end{itemize}
+\chapter{Visión de la solución}
+
+\section{Declaración de la visión}
+\vspace{0.5 cm}
+Calculadora IMC es una aplicación que mostrará información de utilidad respecto al peso,estatura,edad y sexo de cada usuario, mostrando información como lo es el IMC, el peso según una grafica de rangos óptimos según su IMC antes calculado. 
+\section{Características principales}
+\vspace{0.5 cm}
+\textbf {Requerimientos funcionales:}
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{Se podrá acceder al sistema desde cualquier navegador.}
+\item \textit{La información se mostrara en gráficas.}
+\item \textit{El usuario tendrá la capacidad de consultar mas información respecto a la salud a través de una liga a una pagina de salud como el IMMS.}
+\end{itemize}
+\textbf {Requerimientos no funcionales:}
+\vspace{0.5 cm}
+\begin{itemize}
+\item \textit{El tiempo de carga de la información no deberá superar los 30 segundos.}
+\item \textit{Presentara una interfaz sencilla y completa para el fácil ingreso de los datos.}
+\item \textit{La interfaz de usuario tendrá colores suaves atractivos a la vista del usuario.}
+\item \textit{El proyecto sera administrado en git.}
+\item \textit{Utilizar kanban automatizados para la administración del repositorio.}
+\item \textit{Cada pull request deberá ser autorizado por el líder del proyecto.}
+\item \textit{Branch protegidos.}
+\item \textit{Buen manejo de la documentación y control de versiones.}
+\end{itemize}
+
+\chapter{Contexto del negocio}
+\section{Perfil de los involucrados}
+Las partes involucradas son personas que participan activamente en un proyecto, que influyen en el resultado del proyecto. Los perfiles de las partes involucradas son:
+\begin{table}[h!]
+\begin{tabular}{|p{5 cm}|p{5 cm}|p{5 cm}|}
+\hline
+\textbf{Involucrado}&\textbf{Intereses principales}&\textbf{Limitaciones}
+\\\hline
+
+Víctor Iván Medel Ayohua &Realizar la Documentación y especificación de los documentos,contribuir con el desarrollo de los release y mockups de la UI para el desarrollo del proyecto.&Apegarse a los criterios de evaluación solicitados.\\\hline
+
+Luis Alberto Ramos Garcia&Desarrollo de las funciones de cada release, diseñar los diagramas de clases,codificar pruebas para los 2 primeros release & Utilizar angular como framework y seguir los criterios de evaluación solicitados.\\\hline
+\end{tabular}
+\end{table}
+\newpage
+\section{Prioridades del proyecto}
+\vspace{0.5 cm}
+\begin{table}[h!]
+\begin{tabular}{|p{5 cm}|p{5 cm}|p{5 cm}|}
+\hline
+\textbf{Prioridad}&\textbf{Objetivo}&\textbf{Rango de tiempo permitido}
+\\\hline
+Definir el Equipo de trabajo&constituir el equipo de un máximo de 2 integrantes& 13/11/2020.\\\hline
+Planificación&Definir los objetivos del proyecto & 17/11/2020.\\\hline
+Documentación&La documentación debe ser clara y estar bien organizada& 17/11/2020 - 20/11/2020.\\\hline
+Desarrollo&El desarrollo cumpla con las funciones establecidas& 17/11/2020 - 22/11/2020.\\\hline
+Pruebas&La aplicación deberá pasar las pruebas establecidos, se prueba la funcionalidad realizada& 17/11/2020 - 22/11/2020.\\\hline
+Entregas&Entregar la aplicación el día 23/11/20200 & 20/11/2020 - 23/11/2020.\\\hline
+\end{tabular}
+\end{table}
+
+\end{document}
